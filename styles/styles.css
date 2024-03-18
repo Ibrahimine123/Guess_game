@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Use Roboto as the default font */
+    background: url('https://media.giphy.com/media/RlwF2vFb4y7bDnWvcO/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.game {
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White box shadow */
+    display: inline-block;
+}
+
+.game-content {
+    margin-bottom: 20px;
+}
+
+.game h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #F9F9F9; /* Light gray */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
+}
+
+.game p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #D6D6D6; /* Light gray */
+    font-family: 'Roboto', sans-serif; /* Use Roboto for paragraphs */
+}
+
+.game input[type="number"] {
+    appearance: textfield; /* Hide the default arrows */
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #F9F9F9; /* White border */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #F9F9F9; /* Light gray */
+    font-family: 'Roboto', sans-serif; /* Use Roboto for input */
+}
+
+/* Hide arrows for Chrome, Safari, and Edge */
+.game input[type="number"]::-webkit-inner-spin-button,
+.game input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.game button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4169E1; /* Royal blue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for buttons */
+}
+
+.game button:hover {
+    background-color: #1E90FF; /* Dodger blue */
+}
+
+.game-info {
+    margin-top: 40px;
+}
+
+.blur-screen {
+    display: none; /* Hide the blur screen */
+}
+
+.store {
+    margin-top: 20px;
+}

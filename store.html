@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game Store</title>
+    <link rel="stylesheet" href="/styles/store.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="store">
+        <h1>Guess Game Store</h1>
+        <div class="header">
+            <div class="coins">
+                <p>Coins:</p>
+                <span id="coinCount">100</span>
+            </div>
+            <button class="back-button" onclick="goBack()">Back</button>
+        </div>
+        <div class="item-card">
+            <div class="item">
+                <img src="coin_doubler.jpg" alt="Coin Doubler">
+                <div class="item-info">
+                    <h3>Coin Doubler</h3>
+                    <p>Price: 1000 coins</p>
+                    <button onclick="purchaseItem('Coin Doubler', 1000)">Purchase</button>
+                </div>
+            </div>
+        </div>
+        <div class="item-card">
+            <div class="item">
+                <img src="bank.jpg" alt="Bank">
+                <div class="item-info">
+                    <h3>Bank</h3>
+                    <p>Price: 5000 coins</p>
+                    <button onclick="purchaseItem('Bank', 5000)">Purchase</button>
+                </div>
+            </div>
+        </div>
+        <!-- Add more items as needed -->
+    </div>
+    <div class="purchase-history">
+        <h2>Purchase History</h2>
+        <ul id="purchaseList">
+            <!-- Purchased items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="/scripts/script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
