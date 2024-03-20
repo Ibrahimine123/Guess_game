@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
     <title>Guess Game Store</title>
-    <link rel="stylesheet" href="styles/store.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles/store.css">
 </head>
+
 <body>
     <div class="store">
         <h1>Guess Game Store</h1>
+        <a href="index.html">Back</a>
         <div class="header">
+        
             <div class="coins">
                 <p>Coins:</p>
                 <span id="coinCount">100</span>
             </div>
-            <button class="back-button" onclick="goBack()">Back</button>
         </div>
         <div class="item-card">
             <div class="item">
@@ -36,14 +42,8 @@
                 </div>
             </div>
         </div>
-        <!-- Add more items as needed -->
     </div>
-    <div class="purchase-history">
-        <h2>Purchase History</h2>
-        <ul id="purchaseList">
-            <!-- Purchased items will be dynamically added here -->
-        </ul>
-    </div>
-    <script src="scripts/script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>
