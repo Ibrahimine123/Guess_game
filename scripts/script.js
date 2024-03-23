@@ -50,32 +50,3 @@ function checkGuess() {
         }
     }
 }
-
-// Updated Postion After Removing the Purchase history 
-window.onload = function() {
-    const coinCountElement = document.getElementById('coinCount');
-    coinCountElement.textContent = localStorage.getItem('coins') || '100';
-};
-
-function purchaseItem(itemName, itemPrice) {
-    let coins = parseInt(localStorage.getItem('coins')) || 100;
-
-    if (coins >= itemPrice) {
-        const confirmPurchase = confirm(`Are you sure you want to purchase ${itemName} for ${itemPrice} coins?`);
-        if (confirmPurchase) {
-            coins -= itemPrice;
-            localStorage.setItem('coins', coins);
-            localStorage.setItem('item', itemName);
-
-            if (itemName === 'Coin Doubler') {
-                coinDouber = true;
-            }
-
-            // Update UI
-            const coinCountElement = document.getElementById('coinCount');
-            coinCountElement.textContent = coins;
-        }
-    } else {
-        alert('Insufficient coins to purchase this item.');
-    }
-}
