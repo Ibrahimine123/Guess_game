@@ -1,6 +1,5 @@
 let coinDouber = false;
-
-let coins = parseInt(localStorage.getItem('coins'));
+let coins = parseInt(localStorage.getItem(' coins'));
 
 if (!coins || isNaN(coins)) {
     coins = 100;
